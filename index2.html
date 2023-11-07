@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizzabot</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <img src="./assetts/pizzalogo.png" alt="pizzalogo" class="logo" />
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Our story</a>
+        <a href="#">Pizzamenu</a>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <h1>Pizzabot</h1>
+        <img src="./assetts/pizzalogo.png" alt="pizzalogo" class="pizza_img" />
+        <h2>Our pizzas are 2 die 4</h2>
+      </section>
+      <section class="pizzamenu">
+        <form id="formId">
+          <label for="pizzaMenuSelect">Which pizza do you want?</label>
+          <select name="pizzamenu" id="pizzaMenuSelect">
+            <option value="">Choose your pizza</option>
+            <option value="hawaii">Hawaiipie</option>
+            <option value="peperoni">Peperonerone</option>
+            <option value="vegetarian">Vegetaytay</option>
+          </select>
+
+          <label for="pizzaQuantity">How many pizzas?</label>
+          <input
+            name="pizzaAmount"
+            id="pizzaQuantity"
+            type="number"
+            min="0"
+            max="100"
+          />
+          <button type="submit" id="pizzaBtn" onclick="">Place order</button>
+        </form>
+        <p><span id="orderTotal"></span></p>
+      </section>
+    </main>
+    <footer></footer>
+    <script src="script2.js"></script>
+  </body>
+</html>

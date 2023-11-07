@@ -12,7 +12,7 @@ alert(`Hello! \nHappy to serve your pizza. \nOn our menu we have: ${menuItem}`);
 const orderName = prompt(
   "Enter the name of the pizza you want to order today."
 );
-
+//Denna funktion kollar om pizzan finns på menyn
 const checkOrderName = (order) => {
   let pizza = order.toLowerCase();
   for (let i = 0; i < pizzaMenu.length; i++) {
@@ -25,6 +25,7 @@ const checkOrderName = (order) => {
   return false;
 };
 
+//Denna funktion räknar ut pris och tid beroende på hur många pizzor
 const calculatePizzas = (orderedPizza) => {
   const orderQuantity = prompt(`How many ${orderName} would you like?`);
   const cost = orderQuantity * orderedPizza.price;
